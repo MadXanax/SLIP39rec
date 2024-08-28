@@ -17,16 +17,58 @@ Installation
 git clone https://github.com/MadXanax/SLIP39rec.git
 cd SLIP39rec
 pip install -r requirements.txt
-python Recombine_ShamirShares_into_seedphrase.py
 
+```
 
 Usage
 -----
 Run the script:
 
-python shamir_seed_recovery.py
+    python Recombine_ShamirShares_into_seedphrase.py
+
 Follow the prompts to input your mnemonic shares. The tool will validate each share and dynamically calculate the required number of shares needed for recovery.
 
 Optionally, input a passphrase if one was used during the creation of the shares.
 
 Recover the seed phrase: The tool will reconstruct the original seed phrase and display it on the screen.
+
+Exemple
+-
+```
+=================== START ===================
+
+ Enter the first mnemonic share:
+[Your First Mnemonic Share]
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Deduced Parameters:
+ -> Member Threshold (Shares needed to reconstruct): 3
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ Enter Share 2 (use spaces to separate words):
+[Your Second Mnemonic Share]
+
+ Enter Share 3 (use spaces to separate words):
+[Your Third Mnemonic Share]
+
+Enter the secret-passphrase (leave empty if none was used, which is default): [Your Passphrase]
+
+Original Seed Phrase Reconstructed:
+---------------------------------------------
+[Your Reconstructed Seed Phrase]
+---------------------------------------------
+
+=================== END N ===================
+```
+Security Considerations
+-----------------------
+* Data Deletion: The tool uses secure deletion methods to clear sensitive data from memory after use.
+* Environment: Run this tool in a secure, offline environment (such as an air-gapped computer) to minimize risks.
+
+Contributing
+------------
+Contributions are welcome! Please fork this repository and open a pull request to contribute to the project. For feature requests or bug reports, open an issue.
+
+License
+-------
+This project is licensed under the GPL-3.0 license - see the LICENSE file for details.
