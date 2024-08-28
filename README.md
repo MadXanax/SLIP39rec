@@ -1,6 +1,6 @@
 # SLIP39rec(overy) : Shamir Seed Recovery Tool
 
-A Python tool to recover a BIP39 24-word seed phrase from Shamir Secret Shares (SLIP39), following a secure and user-friendly process. This tool mimics Trezor's implementation to provide a reliable method for seed phrase reconstruction using multiple mnemonic shares.
+A Python tool to recover a BIP39 seed phrase from Shamir Secret Shares (SLIP39), following a secure and user-friendly process. This tool mimics Trezor's implementation to provide a reliable method for seed phrase reconstruction using multiple mnemonic shares.
 
 Features
 --------
