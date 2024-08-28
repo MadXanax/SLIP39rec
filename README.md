@@ -13,12 +13,19 @@ Features
 Installation
 ------------
 
-```bash
-git clone https://github.com/MadXanax/SLIP39rec.git
-cd SLIP39rec
-pip install -r requirements.txt
+Clone the repository:
 
-```
+    git clone https://github.com/MadXanax/SLIP39rec.git
+
+Navigate to the project directory:
+
+    cd SLIP39rec
+
+Install required dependencies:
+
+    pip install -r requirements.txt
+
+
 
 Usage
 -----
